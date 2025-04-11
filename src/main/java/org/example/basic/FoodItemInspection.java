@@ -16,15 +16,8 @@ public class FoodItemInspection {
 
     public boolean isEdible()
     {
-        if (this.expirationDate.isAfter(LocalDate.now()) &&
-                this.approvedForConsumption == true &&
-                this.inspectorId != null)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return expirationDate.isAfter(LocalDate.now())
+                && Boolean.TRUE.equals(approvedForConsumption)
+                && inspectorId != null;
     }
 }

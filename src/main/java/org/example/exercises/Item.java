@@ -3,9 +3,7 @@ package org.example.exercises;
 public class Item {
 
 	public String name;
-
 	public int sellIn;
-
 	public int quality;
 
 	public Item(String name, int sellIn, int quality) {
@@ -14,10 +12,20 @@ public class Item {
 		this.quality = quality;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public int getSellIn() {
+		return sellIn;
+	}
+
+	public int getQuality() {
+		return quality;
+	}
+
 	@Override
 	public String toString() {
-		return "\n name=" + name + ", " + sellIn + ", " + quality + "\n" ;
+		return String.format("Item{name='%s', sellIn=%d, quality=%d}", name, sellIn, quality);
 	}
-	
-	
 }

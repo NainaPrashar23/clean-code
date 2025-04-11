@@ -3,7 +3,7 @@ package org.example.basic;
 import java.time.LocalDate;
 import java.util.List;
 
-public class FlightArrivalProcessor {
+public class FlightArrivalProcess {
 
     private static final String STATUS_DELAYED = "Delayed";
     private static final String NEW_LINE = "\n";
